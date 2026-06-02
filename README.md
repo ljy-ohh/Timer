@@ -96,36 +96,3 @@ $env:TIMER_PORTABLE = "1"
 
 打包完成后，可执行文件通常会生成在 `dist/` 目录中。
 
-## 提交到 GitHub
-
-如果这是一个全新的 GitHub 仓库，可以按下面的流程提交。
-
-1. 在本地初始化 Git 仓库：
-
-```powershell
-git init
-git add .
-git commit -m "Initial commit"
-```
-
-2. 在 GitHub 上新建一个空仓库，不要勾选自动生成 README、`.gitignore` 或 License。
-
-3. 复制新仓库地址，例如：
-
-```text
-git@github.com:你的用户名/Timer.git
-```
-
-4. 关联远程仓库并推送：
-
-```powershell
-git branch -M main
-git remote add origin git@github.com:你的用户名/Timer.git
-git push -u origin main
-```
-
-推送完成后，刷新 GitHub 仓库页面即可看到项目文件。
-
-## License
-
-如果准备开源，建议补充一个许可证文件，例如 MIT License。
